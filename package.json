@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "minimist": "^1.2.6"
+    "dotenv": "^16.0.3",
+    "minimist": "^1.2.6",
+    "yargs": "^17.6.0"
   }
 }
