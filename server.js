@@ -1,8 +1,10 @@
 const path = require("path");
 const dotenv = require("dotenv");
-let modo = "test";
 require("dotenv").config({
-  path: path.resolve(__dirname, modo == "prod" ? ".env.prod" : ".env.testing"),
+  path: path.resolve(
+    __dirname,
+    process.env.MODO ? ".env.prod" : ".env.testing"
+  ),
 });
 const { HOST, PORT } = require("./config");
 console.log(HOST, PORT);

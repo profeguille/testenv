@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "set MODO=dev&& node server.js",
+    "prod": "set MODO=prod&& node server.js"
   },
   "keywords": [],
   "author": "",
